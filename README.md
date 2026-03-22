@@ -95,8 +95,8 @@ The dashboard was designed using multiple tools (Excel, Power BI, and Tableau) w
 
 * **External Links Integration:**
    Added clickable icons for:
-      * YouTube
-      * LinkedIn
+        * YouTube
+        * LinkedIn
 Enhances user engagement and navigation
 
 
