@@ -86,17 +86,17 @@ The main goal of this project is to:
 The dashboard was designed using multiple tools (Excel, Power BI, and Tableau) with interactive features to enhance data exploration and user experience.
 
 * **Interactive Filters (Excel & Tableau):**
-* Used *Region* and *Model* slicers in Excel for dynamic data filtering
-* Applied *Region* and *Model* filters in Tableau to enable user-driven analysis
-* These filters allow users to easily explore data across different segments
+    * Used *Region* and *Model* slicers in Excel for dynamic data filtering
+    * Applied *Region* and *Model* filters in Tableau to enable user-driven analysis
+    * These filters allow users to easily explore data across different segments
 
 * **Dynamic & Real-Time Interaction:**
-All charts and KPIs update automatically based on selected filters, providing interactive and real-time insights
+  All charts and KPIs update automatically based on selected filters, providing interactive and real-time insights
 
 * **External Links Integration:**
-Added clickable icons for:
-* YouTube
-* LinkedIn
+   Added clickable icons for:
+      * YouTube
+      * LinkedIn
 Enhances user engagement and navigation
 
 
