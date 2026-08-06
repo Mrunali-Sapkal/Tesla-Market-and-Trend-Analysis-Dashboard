@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1117.1115                               -->
+<workbook original-version='18.1' source-build='2025.3.0 (20253.25.1117.1115)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='DATA (Tesla Dashboard)' inline='true' name='federated.0gl9f770nl0hnl1ekyuk80a0iiwd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Tesla Dashboard' name='excel-direct.0hocbdw1skvwjx161513y0fb7ym9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='F:/Projects/Tesla/Tesla Dashboard.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hocbdw1skvwjx161513y0fb7ym9' name='DATA' table='[DATA$]' type='table'>
+          <columns gridOrigin='A1:M2641:no:A1:M2641:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='date' name='Month Year' ordinal='2' />
+            <column datatype='string' name='Region' ordinal='3' />
+            <column datatype='string' name='Model' ordinal='4' />
+            <column datatype='integer' name='Estimated_Deliveries' ordinal='5' />
+            <column datatype='integer' name='Production_Units' ordinal='6' />
+            <column datatype='real' name='Avg_Price_USD' ordinal='7' />
+            <column datatype='integer' name='Battery_Capacity_kWh' ordinal='8' />
+            <column datatype='integer' name='Range_km' ordinal='9' />
+            <column datatype='real' name='CO2_Saved_tons' ordinal='10' />
+            <column datatype='string' name='Source_Type' ordinal='11' />
+            <column datatype='integer' name='Charging_Stations' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M2641:no:A1:M2641:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Month Year]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Month Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated_Deliveries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Estimated_Deliveries]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Estimated_Deliveries</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Production_Units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Production_Units]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Production_Units</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_Price_USD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_Price_USD]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Avg_Price_USD</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Battery_Capacity_kWh</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Battery_Capacity_kWh]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Battery_Capacity_kWh</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Range_km</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Range_km]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Range_km</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2_Saved_tons</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2_Saved_tons]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>CO2_Saved_tons</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Source_Type]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Source_Type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Charging_Stations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Charging_Stations]</local-name>
+            <parent-name>[DATA]</parent-name>
+            <remote-alias>Charging_Stations</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Price USD' datatype='real' name='[Avg_Price_USD]' role='measure' type='quantitative' />
+      <column caption='Battery Capacity kWh' datatype='integer' name='[Battery_Capacity_kWh]' role='measure' type='quantitative' />
+      <column caption='CO2 Saved tons' datatype='real' name='[CO2_Saved_tons]' role='measure' type='quantitative' />
+      <column caption='Charging Stations' datatype='integer' name='[Charging_Stations]' role='measure' type='quantitative' />
+      <column caption='Estimated Deliveries' datatype='integer' name='[Estimated_Deliveries]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column caption='Production Units' datatype='integer' name='[Production_Units]' role='measure' type='quantitative' />
+      <column caption='Range km' datatype='integer' name='[Range_km]' role='measure' type='quantitative' />
+      <column caption='Source Type' datatype='string' name='[Source_Type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='DATA' datatype='table' name='[__tableau_internal_object_id__].[DATA_A591914775BA4196AC8CA19BC634E570]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/admin/AppData/Local/Temp/TableauTemp/#TableauTemp_1up6lei109suda1e6496s11ihesh.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/06/2026 08:59:37 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>DATA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>DATA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month Year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Month Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>DATA</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>132</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>3</ordinal>
+              <family>DATA</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>4</ordinal>
+              <family>DATA</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated_Deliveries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Estimated_Deliveries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estimated_Deliveries</remote-alias>
+              <ordinal>5</ordinal>
+              <family>DATA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1704</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Production_Units</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Production_Units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Production_Units</remote-alias>
+              <ordinal>6</ordinal>
+              <family>DATA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1765</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg_Price_USD</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg_Price_USD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg_Price_USD</remote-alias>
+              <ordinal>7</ordinal>
+              <family>DATA</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2640</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Battery_Capacity_kWh</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Battery_Capacity_kWh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Battery_Capacity_kWh</remote-alias>
+              <ordinal>8</ordinal>
+              <family>DATA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Range_km</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Range_km]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Range_km</remote-alias>
+              <ordinal>9</ordinal>
+              <family>DATA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>223</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2_Saved_tons</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2_Saved_tons]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO2_Saved_tons</remote-alias>
+              <ordinal>10</ordinal>
+              <family>DATA</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2040</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Source_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Source_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Source_Type</remote-alias>
+              <ordinal>11</ordinal>
+              <family>DATA</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Charging_Stations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Charging_Stations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Charging_Stations</remote-alias>
+              <ordinal>12</ordinal>
+              <family>DATA</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1799</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DATA_A591914775BA4196AC8CA19BC634E570]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='DATA' id='DATA_A591914775BA4196AC8CA19BC634E570'>
+            <properties context=''>
+              <relation connection='excel-direct.0hocbdw1skvwjx161513y0fb7ym9' name='DATA' table='[DATA$]' type='table'>
+                <columns gridOrigin='A1:M2641:no:A1:M2641:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Month' ordinal='1' />
+                  <column datatype='date' name='Month Year' ordinal='2' />
+                  <column datatype='string' name='Region' ordinal='3' />
+                  <column datatype='string' name='Model' ordinal='4' />
+                  <column datatype='integer' name='Estimated_Deliveries' ordinal='5' />
+                  <column datatype='integer' name='Production_Units' ordinal='6' />
+                  <column datatype='real' name='Avg_Price_USD' ordinal='7' />
+                  <column datatype='integer' name='Battery_Capacity_kWh' ordinal='8' />
+                  <column datatype='integer' name='Range_km' ordinal='9' />
+                  <column datatype='real' name='CO2_Saved_tons' ordinal='10' />
+                  <column datatype='string' name='Source_Type' ordinal='11' />
+                  <column datatype='integer' name='Charging_Stations' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E7309EBD-754D-48E6-86C0-5B482F0FDEC4}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F886BA51-486F-4D92-AE36-96FF4F6CC5FF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
